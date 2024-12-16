@@ -1,0 +1,31 @@
+body{
+    height: 300vh !important;
+}
+
+#clouds2{
+    position: absolute;
+    top: 100vh;
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#clouds2 img{
+    height: 100%;
+    width: 100%;
+    opacity: 95%;
+}
+
+#CloudsRight{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+}
+
+#CloudsLeft{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0%;    
+}

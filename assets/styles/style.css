@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+@font-face {
+    font-family: IranNastaliq;
+    src: url(../font/IranNastaliq.ttf);
+}
+
+@font-face {
+    font-family: Sameer;
+    src: url(../font/Sameer.ttf);
+}
+
+body{
+    background-color: #B9E2F5;
+    height: 200vh;
+}
+
+#upperCloud{
+    height: 30vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    transition: 0.3s;
+    background-image: linear-gradient(#B9E2F5 5%, #b9e2f58b 55%, #b9e2f500 85%);
+}
+
+#HafezTextTitle{
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.604));
+    background-image: url('../../assets/img/gazal/title.png');
+    background-size: 100% 100%;
+    font-family: IranNastaliq;
+    color: rgb(3, 34, 46);
+    color: rgb(228, 228, 228);
+    text-align: center;
+    width: max-content;
+    padding: 0px 55px;
+    font-size: 50px;
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+#pageCont{
+    height: 100vh;
+    width: 100%;
+}
+
+#firstPageCont{
+    height: 85vh;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 15vh;
+    left: 0;
+}
+
+#firstPageContR{
+    width: 100%;
+    height: 100%;
+}
+
+#treeImg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    z-index: 0;
+}
+
+#treeImg img{
+    height: 100%;
+    filter: drop-shadow(2px 2px 1px black);
+    filter: grayscale(20%);
+}
+
+#treeImg2{
+    width: max-content;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+#treeImg2 img{
+    height: 100%;
+    filter: drop-shadow(2px 2px 2px black);
+    filter: grayscale(50%);
+}
+
+#treeImg3{
+    width: max-content;
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+    z-index: -1;
+}
+
+#treeImg3 img{
+    height: 100%;
+    filter: drop-shadow(2px 2px 2px black);
+    filter: grayscale(10%);
+}
+
+#treeImg4{
+    width: max-content;
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    z-index: -1;
+}
+
+#treeImg4 img{
+    height: 100%;
+    filter: drop-shadow(2px 2px 2px black);
+    filter: grayscale(10%);
+}
+
+#treeImg5{
+    width: 100%;
+    height: 20vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+}
+
+#treeImg5 img{
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(2px 2px 2px black);
+}
+
+#hafeziye{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#hafeziyeImg{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0%;
+    z-index: 5;
+    background-image: radial-gradient(circle at center, #b9e2f593 0, #b9e2f50e, #b9e2f500 100%);
+}
+
+#hafeziyeImg img{
+    filter: drop-shadow(2px 2px 2px black);
+}
+
+#bottomGradiant{
+    height: 10vh;
+    width: 100%;
+    background-image: linear-gradient(#e5c27700 0%,#e5c2776b 50%, rgb(219, 175, 134) 100%);
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+}
+
+#secondpage{
+    background-color: rgb(219, 175, 134);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#fallCont{
+    position: absolute;
+    left: 50%;
+    bottom: 5vh;
+    transform: translateX( -50%);
+    
+
+    width: 90%;
+    height: 75vh;
+    background-image: url('../img/gazal/gazalBg-removebg-preview\ \(1\).png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 2;
+}
+
+#ghazalCont{
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: calc(83% - 8vh);
+    overflow-y: scroll;
+}
+
+#buttonCont{
+    width: 80%;
+    height: 8vh;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 8%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px black solid;
+}
+
+#buttonCont button{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    padding: 5px 30px;
+    height: max-content;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: Sameer;
+    font-size: 25px;
+    color: rgb(1, 46, 50);
+    filter: drop-shadow(2px 2px 2px rgb(1, 46, 50));
+    transition: 0.3s;
+}
+
+#buttonCont button:hover{
+    filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.589));
+}
+
+#nextBtn{
+    background-image: url('../img/gazal/3.png');
+}
+
+#niatBtn{
+    background-image: url('../img/gazal/2.png');
+}
+
+#ghazalShomareBtn{
+    background-image: url('../img/gazal/1.png');
+}
+
+#falBtn{
+    background-image: url('../img/gazal/2.png');
+}
+
+#soundBtn{
+    background-image: url('../img/gazal/3.png');
+}
+
+#tabirCont{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.31);
+    z-index: 9;
+}
+
+#tabirText{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 90%;
+    max-width: 700px;
+    height: 90%;
+    background-color: red;
+    background-size: 100% 100%;
+    background-image: url('../img/first\ page/Vintage Digital Ephemera Paper AI Created Old World Design - Digital Download Art Paper for Junk Journal, Scrapbook, Cottage Core, DIY Craft.jpg');
+    border-radius: 10px;
+}
+
+#tabirTextCont{
+    margin-top: 30px;
+    padding: 10%;
+    font-family: Sameer;
+    font-size: 20px;
+    width: 90%;
+    height: calc(100% - 100px);
+    overflow-y: scroll;
+}
+
+.disNon{
+    display: none;
+}
+
+#exit{
+    position: absolute;
+    bottom: 10px;
+    border: 1px orange solid;
+    padding: 10px 30px;
+    background-color: rgba(255, 166, 0, 0.622);
+    border-radius: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+    cursor: pointer;
+}
+#exit:hover{
+    background-color: rgba(235, 153, 0, 0.685);
+    color: white;
+}
+
+@media screen and (min-width: 769px) {
+
+    #fallCont{
+        max-width: 800px;
+    }
+
+    #ghazalCont{
+        position: absolute;
+        top: 8%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        height: calc(83% - 11vh);
+        overflow-y: scroll;
+    }
+
+    #buttonCont {
+        height: 11vh;
+    }
+
+    #buttonCont button{
+        font-size: 25px;
+        padding: 5px 30px;
+    }
+
+    #ghazalUi{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .mesraLi{
+        width: 100%;
+        padding-inline: 15px;
+        font-size: 30px;
+        font-family: Sameer;
+        text-align: right;
+        color: rgb(0, 73, 128);
+    }
+
+    .mesraLi:nth-child(even){
+        text-align: left;
+        color: rgb(12, 83, 104);
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+
+
+    #buttonCont button{
+        padding: 5px 30px;
+        font-size: 20px;
+    }
+
+    #ghazalUi{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .mesraLi{
+        width: 100%;
+        padding-inline: 15px;
+        font-size: 25px;
+        font-family: Sameer;
+        text-align: right;
+        color: rgb(0, 73, 128);
+    }
+
+    .mesraLi:nth-child(even){
+        text-align: left;
+        color: rgb(12, 83, 104);
+    }
+    
+}
+
+@media screen and (max-width: 645px) {
+
+    #nextBtn{
+        display: none;
+    }
+
+    #soundBtn{
+        display: none;
+    }
+
+    #buttonCont button{
+        font-size: 15px;
+        padding: 0px 20px;
+    }
+
+    #ghazalUi{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .mesraLi{
+        width: 100%;
+        padding-inline: 15px;
+        font-size: 10px;
+        font-family: Sameer;
+        text-align: right;
+        color: rgb(0, 73, 128);
+    }
+
+    .mesraLi:nth-child(even){
+        text-align: left;
+        color: rgb(12, 83, 104);
+    }
+    
+}
